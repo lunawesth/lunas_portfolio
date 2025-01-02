@@ -1,3 +1,8 @@
+body {
+  margin: 0;
+  background-color: #fffffd;
+}
+
 .burgermenu {
   display: flex;
   cursor: pointer;
@@ -11,7 +16,7 @@
 .burgermenu .line {
   width: 30px;
   height: 4px;
-  background-color: #544d3c;
+  background-color: #2e00e8;
   border-radius: 2px;
   transition: all 0.3s ease;
 }
@@ -38,6 +43,7 @@
   padding-bottom: 1rem;
   padding-top: 4rem;
   list-style-type: none;
+  z-index: 1;
 }
 
 .nav_links a {
@@ -62,7 +68,7 @@
   position: absolute;
   top: 145%;
   right: 0;
-  z-index: 1;
+  z-index: 2;
   background-color: #fffffd;
   width: 130%;
 }
@@ -76,7 +82,7 @@
   position: absolute;
   top: 145%;
   right: 0;
-  z-index: 1;
+  z-index: 2;
   background-color: #fffffd;
   width: 130%;
 }
@@ -89,12 +95,36 @@ footer {
 }
 
 /* forside css */
+.forside_container {
+  position: relative;
+  width: 100%;
+  min-height: 600px;
+}
 
-.forside {
-  font-size: 40px;
+.lottie_container {
+  position: absolute;
+  top: 0;
+  left: 25px;
+  width: 100%;
+}
+
+.forside_overskrift {
+  position: relative;
+  font-size: 45px;
+  font-family: "hiragino-kaku-gothic-pron", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: #2f3dd8;
+  top: 200px;
+  max-width: 100%;
+  padding-left: 1rem;
 }
 
 @media (width >= 700px) {
+  .burgermenu {
+    top: 5%;
+    right: 4%;
+  }
   .nav_links {
     padding-left: 4rem;
     padding-bottom: 12rem;
@@ -102,5 +132,22 @@ footer {
   }
   .nav_links a {
     font-size: 60px;
+  }
+
+  .lottie_container {
+    position: absolute;
+    top: 0;
+    left: 85%;
+    width: 100%;
+    transform: scale(2);
+    z-index: -1;
+  }
+
+  .forside_overskrift {
+    font-size: 90px;
+    top: 90px;
+    max-width: 100%;
+    padding-left: 6rem;
+    padding-bottom: 4rem;
   }
 }

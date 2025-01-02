@@ -1,13 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script>
+    (function(d) {
+      var config = {
+        kitId: 'olq3aeg',
+        scriptTimeout: 3000,
+        async: true
+      },
+      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+    })(document);
+  </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex">
     <link rel="icon" type="image/png" href="../img/blomst2.png"/>
     <link rel="stylesheet" href="../css/style.css">
-    <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
-<dotlottie-player src="https://lottie.host/77d38fda-28b3-4496-b7cf-f6b8eb47fa7e/8iIOMfmEE4.lottie" background="transparent" speed="1" style="width: 300px; height: 300px" loop autoplay></dotlottie-player>
     <title>Forside</title>
 </head>
 <body>
@@ -29,10 +37,19 @@
         </nav>
     </header>
     <main>
-<section class="forside">
+
+    <section class="forside_container">
+        <div class="lottie_container">
+        <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+        <dotlottie-player src="https://lottie.host/3a8d89d1-6ca0-42c0-bc17-9e4168b394a3/i7faZGfDLQ.lottie" background="transparent" speed="1" style="width: 450px; height: 550px" loop autoplay></dotlottie-player>
+        </div>
+
+<div class="forside_overskrift">
     <h1>LUNAS</h1>
     <h1>PORTFOLIO</h1>
+</div>
 </section>
+
     </main>
     <footer>
         <p>Copyright © 2025</p>
