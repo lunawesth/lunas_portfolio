@@ -1,14 +1,6 @@
 body {
   margin: 0;
-  background-color: #fdfdff;
-}
-
-header {
-  padding-bottom: 60px;
-}
-
-main {
-  padding: 30px;
+  background-color: #fefeff;
 }
 
 .burgermenu {
@@ -86,101 +78,58 @@ main {
   width: 110%;
 }
 
-h1 {
-  font-family: "inter-tight-variable", sans-serif;
-  font-weight: 800;
-  font-size: 9.5vw;
-}
-
-.overskrift {
-  text-align: right;
-  position: relative;
-  right: 4%;
-}
-
-h2 {
-  font-family: "inter-tight-variable", sans-serif;
-  font-variation-settings: "wght" 500;
-  padding-top: 40px;
-}
-
-p {
-  font-family: "inter-tight-variable", sans-serif;
-  font-variation-settings: "wght" 400;
-}
-
-.html_billede,
-.ux_billede,
-.ani_billede,
-.ind_billede,
-.om_billede {
-  display: grid;
-  place-items: center;
-  height: auto;
-  width: 100%;
-  padding: 8px;
-}
-
-.btn {
-  position: relative;
-  font-family: "inter-tight-variable", sans-serif;
-  text-decoration: none;
-  border: 1px solid #2e00e8;
-  border-radius: 5px;
-  padding: 3px;
-  font-size: 13px;
-  color: black;
-  background-color: #c6d2ff;
-  top: 20px;
-}
-
 footer {
   background-color: #2e00e8;
   color: #fffffd;
   text-align: center;
   padding: 2.5rem;
   margin-top: 30px;
+  font-family: "inter-tight-variable", sans-serif;
+  font-variation-settings: "wght" 400;
+}
+
+/* forside css */
+.forside_container {
+  position: relative;
+  width: 100%;
+  min-height: 600px;
+}
+
+.lottie_container {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.forside_overskrift {
+  position: relative;
+  font-size: 45px;
+  font-family: "hiragino-kaku-gothic-pron", sans-serif;
+  color: #2f3dd8;
+  top: 310px;
+  max-width: 100%;
+  padding-left: 1rem;
 }
 
 @media (width >= 700px) {
-  main {
-    padding: 0 250px;
-  }
-
   .nav_links a {
     font-size: 60px;
   }
 
-  h1 {
-    font-family: "inter-tight-variable", sans-serif;
-    font-weight: 800;
-    font-size: 6vw;
-    letter-spacing: 0.1rem;
-  }
-
-  .blomst {
+  .lottie_container {
+    position: absolute;
+    top: 0;
+    left: 85%;
+    width: 100%;
     transform: scale(2);
-    position: relative;
-    left: 150px;
-    padding-bottom: 40px;
+    z-index: -1;
   }
 
-  .btn {
-    top: 40px;
-    border-radius: 10px;
-    padding: 8px;
-    font-size: 17px;
-  }
-
-  footer {
-    margin-top: 100px;
-  }
-
-  /* ux css */
-
-  .ux_grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
+  .forside_overskrift {
+    font-size: 90px;
+    top: 90px;
+    max-width: 100%;
+    padding-left: 6rem;
+    padding-bottom: 4rem;
   }
 }
