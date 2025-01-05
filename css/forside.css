@@ -1,6 +1,8 @@
 body {
   margin: 0;
   background-color: #fefeff;
+  max-width: 100%;
+  background-color: #fff6a0;
 }
 
 .burgermenu {
@@ -82,7 +84,7 @@ footer {
   background-color: #2e00e8;
   color: #fffffd;
   text-align: center;
-  padding: 2.5rem;
+  padding: 5rem;
   margin-top: 30px;
   font-family: "inter-tight-variable", sans-serif;
   font-variation-settings: "wght" 400;
@@ -119,8 +121,8 @@ footer {
   .lottie_container {
     position: absolute;
     top: 0;
-    left: 85%;
-    width: 100%;
+    left: 40%;
+    width: 100px;
     transform: scale(2);
     z-index: -1;
   }
@@ -132,4 +134,29 @@ footer {
     padding-left: 6rem;
     padding-bottom: 4rem;
   }
+
+  footer {
+    padding-top: 2.5rem;
+  }
+
+  /* .footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .kontakt {
+    grid-column: 1/2;
+    grid-row: 1;
+    text-align: left;
+  }
+
+  .copyright {
+    grid-row: 1;
+    grid-column: 2/3;
+  }
+
+  .adresse {
+    grid-row: 1;
+    grid-column: 3/4;
+  } */
 }
